@@ -71,13 +71,13 @@ class LoginController extends Controller
 
     //Github Login
     public function redirectToGithub(){
-        return Socialite::driver('github')->redirect();
+        return Socialite::driver('github')->stateless()->redirect();
     }
 
     //github callback  
     public function handleGithubCallback(){
 
-        $user = Socialite::driver('github')->user();
+        $user = Socialite::driver('github')->stateless()->user();
 
            $this->_registerorLoginUser($user);
            return redirect()->route('home');
