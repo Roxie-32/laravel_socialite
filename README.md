@@ -1,3 +1,5 @@
+# OAUTH Authentication in Laravel : Social Login with Laravel Socialite
+
 The importance of authentication in software engineering cannot be overemphasized. This article discusses the topic in relation to Laravel. It briefly describes OAuth and its implementation in Laravel.
 Here are a few things you'll learn:
 
